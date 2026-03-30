@@ -6,7 +6,7 @@ authors = ["Indoc Research"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-common = "0.0.19"
+common = { git = "https://github.com/vre-charite-autodeploy/service_common.git", branch="main" }
 logger = "0.1.0"
 anyio = "3.4.0"
 asyncpg = "0.25.0"
@@ -50,8 +50,3 @@ pytest-mock = "^3.7.0"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[[tool.poetry.source]]
-name = "pilot"
-url = "https://git.bihealth.org/api/v4/groups/vre/-/packages/pypi/simple"
-default = true
